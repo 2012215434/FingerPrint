@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>preview a PDF simplest example!</title>
+<script type="text/javascript" src="../JS/pdfobject.js"></script>
+
+<script type="text/javascript">
+
+window.onload = function (){
+
+	var success = new PDFObject({ url: "pdf/sample.pdf" }).embed("pdf");
+	
+};
+
+</script>
+
+<style type="text/css">
+#pdf { height: 300px; }
+</style>
+
+</head>
+
+<body>
+<h1>preview a PDF simplest example!</h1>
+<div id="pdf" style="width:700px; height:600px;">It appears you don't have Adobe Reader or PDF support in this web browser. <a href="tmp/JavaScript.pdf">Click here to download the PDF</a></div>
+<object data="myfile.pdf" type="application/pdf" width="100%" height="100%">
+ 
+  <p>It appears you don't have a PDF plugin for this browser.
+  No biggie... you can <a href="myfile.pdf">click here to
+  download the PDF file.</a></p>
+  
+</object>
+<p><a href="/index.jsp">&laquo; Return to PDFObject home</a></p>
+
+
+</body>
+</html>

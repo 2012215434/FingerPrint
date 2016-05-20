@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>preview PDF</title>
+<script type="text/javascript" src="JS/pdfobject.js"></script>
+
+<script type='text/javascript'>
+function embedPDF(){
+
+    var myPDF = new PDFObject({ 
+
+      url: 'http://59.68.29.53:8080/FingerPrint/tmp/JavaScript.pdf',
+      pdfOpenParams: { scrollbars: '1', toolbar: '1' }
+
+    }).embed('pdf'); 
+    
+  }
+	
+	window.onload = embedPDF; //Feel free to replace window.onload if needed.
+
+</script>
+
+</head>
+<body>
+<div id="pdf" style="width:1000px; height:500px;">
+</div>
+</body>
+</html>
